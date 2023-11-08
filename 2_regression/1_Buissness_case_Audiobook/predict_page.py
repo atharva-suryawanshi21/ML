@@ -12,11 +12,14 @@ our_model = load_model()
 
 
 def show_predict_page():
+    st.image("D:/GITHUB/ML/2_regression/1_Buissness_case_Audiobook/audiobook.jpg",
+             caption="Audio book", use_column_width=False)
+
     st.title("Audiobook Customer Conversion Predictor")
 
     st.write("""### Give Useful Information""")
     data = [0.0] * 10
-    data[0] = st.number_input("Enter an overall book length:")
+    data[0] = st.number_input("Enter overall book length:")
     data[1] = st.number_input("Enter average book length:")
 
     data[2] = st.number_input("Enter an overall price:")
