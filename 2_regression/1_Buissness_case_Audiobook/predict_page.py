@@ -12,8 +12,6 @@ our_model = load_model()
 
 
 def show_predict_page():
-    st.image("D:/GITHUB/ML/2_regression/1_Buissness_case_Audiobook/audiobook.jpg",
-             caption="Audio book", use_column_width=False)
 
     st.title("Audiobook Customer Conversion Predictor")
 
@@ -49,6 +47,8 @@ def show_predict_page():
         predicted_class = np.argmax(conversion, axis=1)
 
         if predicted_class == 0:
-            st.subheader(" The customer will not convert into using our app")
+            st.subheader(
+                " There is low probablity that the customer will back")
         else:
-            st.subheader(" The customer will convert into using our app")
+            st.subheader(
+                "There is high probablity that the customer will back")
