@@ -1,1 +1,0 @@
-You can download the dataset by cloning this "https://github.com/brendenlake/omniglot". The folder named “Python” contains two zip files: images_background.zip and images_evaluation.zip. Just unzip these two files.
